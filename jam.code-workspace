@@ -1,0 +1,1315 @@
+{
+	"folders": [
+		{
+			"name": "jam",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "C:\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "jam Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Test",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Test",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Test",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Test",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Test",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Test",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"Linux",
+					"Shipping",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Test",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jam LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jam LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jam",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jamEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jamEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jamEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jamEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jamEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jamEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Linux",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Linux",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jamEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jamEditor",
+					"Linux",
+					"Debug",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jamEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jamEditor",
+					"Linux",
+					"DebugGame",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Linux",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"jamEditor",
+					"Linux",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"jamEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			},
+			{
+				"label": "jamEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"jamEditor",
+					"Linux",
+					"Development",
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch jam (Debug)",
+				"request": "launch",
+				"program": "C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "jam Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch jam (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "jam Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch jam (Development)",
+				"request": "launch",
+				"program": "C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "jam Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch jam (Test)",
+				"request": "launch",
+				"program": "C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "jam Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch jam (Shipping)",
+				"request": "launch",
+				"program": "C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "jam Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch jamEditor (Debug)",
+				"request": "launch",
+				"program": "C:\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "jamEditor Win64 Debug Build",
+				"args": [
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject"
+				],
+				"cwd": "C:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch jamEditor (DebugGame)",
+				"request": "launch",
+				"program": "C:\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "jamEditor Win64 DebugGame Build",
+				"args": [
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject"
+				],
+				"cwd": "C:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch jamEditor (Development)",
+				"request": "launch",
+				"program": "C:\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "jamEditor Win64 Development Build",
+				"args": [
+					"C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject"
+				],
+				"cwd": "C:\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "C:\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=C:\\Users\\leona\\Documents\\Unreal Projects\\jam\\jam.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "C:\\UE_5.3"
+			}
+		]
+	}
+}
